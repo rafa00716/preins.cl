@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preload" preload href="styles.css" />
+    <link rel="preload" href="scripts.js" as="script" />
+    <link rel="stylesheet" preload href="styles.css" />
+  </head>
+  <body>
+    <section id="inicio">
+      <header>
+        <div class="page_links">
+          <a href="#inicio">Inicio</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </header>
+      <div class="logo_principal">
+        <img src="/assets/images/logo princpal.png" alt="" />
+      </div>
+      <div class="texto_principal">
+        <p>
+          Una empresa que ofrece soluciones integrales en el ámbito de la presencia y la instalación, como servicio de marketing y montaje.
+        </p>
+      </div>
+    </section>
+    <section id="servicios">
+      <div class="rectangle_row">
+        <div
+          class="servicio_rectangle"
+          style="
+            background-image: url(/assets/images/como-colocar-vinilo-coche_14.png);
+          "
+        >
+          <div class="servicio_text">
+            <p>
+              INSTALACIÓN <br />
+              GRÁFICA
+            </p>
+          </div>
+        </div>
+        <div
+          class="servicio_rectangle"
+          style="background-image: url(/assets/images/1710767312298.jpg)"
+        >
+          <div class="servicio_text">
+            <p>LETRAS 3D</p>
+          </div>
+        </div>
+        <div
+          class="servicio_rectangle"
+          style="
+            background-image: url(/assets/images/view-worker-grinding-piece-metal.jpg);
+          "
+        >
+          <div class="servicio_text">
+            <p>
+              ESTRUCTURAS <br />
+              METÁLICAS
+            </p>
+          </div>
+        </div>
+        <div
+          class="servicio_rectangle"
+          style="
+            background-image: url(/assets/images/view-worker-grinding-piece-metal.jpg);
+          "
+        >
+          <div class="servicio_text">
+            <p>
+              LETREROS <br />
+              LUMINOSOS
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="rectangle_red_container">
+        <div class="car">
+          <img src="/assets/images/CAMIONETA.png" alt="" />
+        </div>
+        <div class="rectangle_red">
+          <h1>Nuestros Servicios</h1>
+          <div class="nuestros_servicios">
+            <h4>Instalaciones publicitarias</h4>
+            <h4>Impresión digital</h4>
+            <h4>Señalización vial</h4>
+            <h4>Letreros Luminosos</h4>
+            <h4>Estructuras metálicas</h4>
+            <h4>Expo y Stand</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contacto">
+        <div class="casco_img_container">
+            <img src="/assets/images/CASCO.png" alt="">
+        </div>
+        <form class="formulario-contacto" id="formulariocontacto">
+            <div class="fila">
+              <input required type="text" placeholder="Dinos tu nombre" name="name" class="input-formulario">
+            </div>
+            <div class="fila">
+              <input required type="email" placeholder="Indica un correo electrónico" name="email"  class="input-formulario">
+            </div>
+            <div class="fila">
+              <input required type="text" placeholder="Indica un titulo breve de tu consulta" name="subject"  class="input-formulario">
+            </div>
+            <div class="fila">
+                <textarea required placeholder="Cotiza sin compromiso" name="message" class="input-formulario"></textarea>
+            </div>
+            <div class="fila">
+              <button type="submit" class="boton-enviar">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+
+    <div class="whatsapp_footer_button" onclick="redirectWhatsapWeb()">
+      <div class="inverted-border-radius">
+        <div class="_button">
+          <button (click)="redirectWhatsapWeb()">
+            <img src="/assets/images/whatsapp icon red.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="whatsapp_text">
+        Habla con un experto ahora 🧑🏼‍🏭
+      </div>
+
+    </div>
+
+
+    <script src="scripts.js" defer></script>
+  </body>
+</html>
